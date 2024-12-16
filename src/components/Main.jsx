@@ -7,19 +7,20 @@ import DescCard from "./DescCard";
 
 
 function Main() {
-    const [activeBtn, setActiveBtn] = useState(1);
+    const [activeBtn, setActiveBtn] = useState(0);
 
     return (
         <main className="container my-5 d-flex justify-content-center">
             <div className="d-flex flex-column">
-                <div>
-                    <TitleBtn
-                        languages={languages}
-                        activeBtn={activeBtn} 
-                        setActiveBtn={setActiveBtn} 
-                    />
-                </div>
-                    <DescCard activeCard={languages} setActiveCard={setActiveBtn}/>
+                <TitleBtn
+                    languages={languages}
+                    activeBtn={activeBtn}
+                    setActiveBtn={setActiveBtn}
+                />
+                <DescCard
+                    languages={languages}
+                    activeCard={activeBtn}
+                />
             </div>
         </main>
     );
