@@ -2,3 +2,8 @@ header{
   padding: 2px 30px;
   background-color: lightgray;
 }
+
+.myTitleCard{
+  border-radius: 5px;
+  width: 50%;
+}
